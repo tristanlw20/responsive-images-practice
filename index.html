@@ -6,7 +6,14 @@
   <meta charset="utf-8">
   <style type="text/css">
     body {
-      background-image: url("gradient-background.jpg");
+      background-image: linear-gradient(to bottom right, red, pink);
+      background-repeat:no-repeat;
+      background-attachment: fixed;
+    }
+    header{
+    	background: url(space-header.jpg);
+    	background-repeat: no-repeat;
+    	background-size: cover;
     }
 
     img { max-width: 100%; }
@@ -47,18 +54,24 @@
 
     <div class="photo-container">
       <div class="photo-frame">
-        <img srcset="yeah.jpg 1280w, yeah-800w.jpg 800w, yeah-400w.jpg 400w"
-              sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1200px"
+        <img srcset="yeah.jpg 1024w, yeah-800w.jpg 800w, yeah-400w.jpg 400w"
+              sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1024px"
               src="yeah-800w.jpg"
               alt="really cool cat yelling 'yeah!'">
       </div>
 
       <div class="photo-frame">
-        <img src="dragon.jpg" alt="a fire-breathing cat">
+        <img srcset="dragon.jpg 1024w, dragon-800w.jpg 800w, dragon-400w.jpg 400w"
+              sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1024px" 
+              src="dragon.jpg" 
+              alt="a fire-breathing cat">
       </div>
 
       <div class="photo-frame">
-        <img src="grr.jpg" alt="a cat making a weird face">
+        <img srcset="grr.jpg 1024w, grr-800w.jpg 800w, grr-400w.jpg 400w"
+              sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1024px" 
+              src="grr.jpg" 
+              alt="a cat making a weird face">
       </div>
     </div>
   </section>
